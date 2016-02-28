@@ -85,7 +85,7 @@ def main(args):
     for it in args.instrtype:
         instr_files = select_instrument(args, it)
         temp_df = df.DataFrame([instr_files, [it]*len(instr_files)], columns=['file', 'class'])
-        df.append(temp_df, ignore_index=True)
+        df = df.append(temp_df, ignore_index=True)
     df.to_csv('{}data_info'.format(args.outpath), sep='\t', encoding='utf-8')
     return 0  # done, yay!
 
