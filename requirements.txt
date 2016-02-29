@@ -1,0 +1,10 @@
+joblib
+six
+pandas
+numpy
+scipy
+matplotlib
+theano
+pytest
+librosa
+git+git://github.com/bmcfee/pescador.git
